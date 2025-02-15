@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:18
+    container_name: UGRAM-H2025-TEAM-21
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    environment:
+      - PORT=${APP_PORT}
+      - MONGO_URI=${MONGO_URI}
+    command: npm run dev
+

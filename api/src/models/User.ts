@@ -8,7 +8,7 @@ export class User {
   private profilePicture?: string;
   private createdAt: Date;
 
-  //TEST
+  //TEST2
   constructor(
     id: string,
     userName: string,
